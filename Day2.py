@@ -1,18 +1,8 @@
 print("Welcome to the tip calculator.")
 
 amount = float(input("What was the total bill? R"))
-while amount.isdigit()==False and (amount != int or amount != float):
-    print("Error")
-    amount = float(input("What was the total bill? R"))
-
 tip = int(input("What percentage tip would you like to give? 10, 12 or 15? "))
-while tip.isdigit()==False and tip != int:
-    print("Error")
-    tip = int(input("What percentage tip would you like to give? 10, 12 or 15? "))
-
 people = int(input("How many people to split the bill? "))
-while people.isdigit() == False and people != int:
-    people = int(input("How many people to split the bill? "))
 
 
 amount_split = ((amount*(tip/100)) + amount)/people
